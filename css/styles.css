@@ -1,4 +1,174 @@
-body {
-  color: #2a2a2a;
+/* Палитра цветов */
+:root {
+  --main-txt-color: #212121;
+  --sub-txt-color: #ffffff;
+  --txt-color: #757575;
+  --heder-link-color: #2196f3;
+  --logo-footer-color: #000000;
+  --section1-background-color: #2f303a;
+  --footer-link-color: rgb(255, 255, 255, 0.6);
+  --section2-background-color: #ececec;
+  --section-background-color: #f5f4fa;
 }
-/*Цвет основного текста #000000/*
+/* Убирает точки */
+ul {
+  list-style: none;
+}
+/* Задает цвет основному шрифту */
+body {
+  color: var(--txt-color);
+  font-family: roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/* Задает цвет заголовкам */
+h1 {
+  color: var(--sub-txt-color);
+}
+h2,
+h3,
+h4 {
+  color: var(--main-txt-color);
+}
+
+/* Стилизация хедера nav */
+.logo {
+  color: var(--logo-footer-color);
+  font-family: raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+}
+
+.nav-link {
+  color: var(--main-txt-color);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+.link-accent {
+  color: var(--heder-link-color);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+/* Стилизация хедера контакты */
+.hader-link,
+.tel-link {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+/* Псевдоэлементы ссылок */
+.logo:hover,
+.logo:focus,
+.footer-adress:hover,
+.footer-contact:hover,
+.footer-adress:focus,
+.footer-contact:focus,
+.tel-link:hover,
+.tel-link:focus,
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--heder-link-color);
+}
+/* подсветка ссылки при активации */
+.logo:active,
+.footer-adress:active,
+.footer-contact:active,
+.tel-link:active,
+.nav-link:active {
+  color: #ff0000;
+}
+/* задает цвет ссылки тел. */
+.tel-link {
+  color: var(--txt-color);
+}
+
+/* Стилизация кнопок */
+.order-button {
+  background-color: var(--heder-link-color);
+  color: var(--sub-txt-color);
+  cursor: pointer;
+  /* font-family: inherit Унаследовать от боди font-family */
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: Center;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+}
+.button:hover,
+.button:focus {
+  background-color: var(--heder-link-color);
+  color: var(--sub-txt-color);
+}
+.button {
+  color: var(--main-txt-color);
+  background-color: var(--section-background-color);
+  font-size: 16px;
+  line-height: 1.62;
+  font-weight: 500;
+}
+/* Стилизация секция 1 */
+.main-heading {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+}
+
+/* Стилизация секция 2 */
+.worck-title {
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 700;
+}
+.worck-content {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* Стилизация секция 3*/
+.our-activities {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 41.16;
+}
+/* Стилизация секция 4 */
+.worck-team {
+  font-size: 16px;
+  line-height: 1.18;
+  font-weight: 500;
+}
+.person {
+  font-size: 16px;
+  line-height: 1.18;
+}
+/* Стилизация футера */
+.footer-contact {
+  color: var(--footer-link-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+}
+.footer-adress {
+  color: var(--sub-txt-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+}
+
+/* Вторая страница */
+.main-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+}
