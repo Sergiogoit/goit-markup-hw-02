@@ -20,7 +20,10 @@ body {
   font-family: roboto, sans-serif;
   letter-spacing: 0.03em;
 }
-
+/* Убирает подчеркивание */
+a {
+  text-decoration: none;
+}
 /* Задает цвет заголовкам */
 h1 {
   color: var(--sub-txt-color);
@@ -38,6 +41,7 @@ h4 {
   font-size: 26px;
   line-height: 1.19;
   font-weight: 700;
+  text-decoration: none;
 }
 
 .nav-link {
